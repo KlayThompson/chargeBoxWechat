@@ -1,0 +1,72 @@
+<!--pages/switchOrderDetail/switchOrderDetail.wxml-->
+<view class="full-container">
+    <view class="order-main-info">
+        <text class="order-co-info">此次充电预计可增加里程
+        </text>
+        <view class="">
+            <text class="order-km-info">+{{add_metter}}</text>
+            <text class="order-km-info-unit">km</text>
+        </view>
+        <view class="order-wave-bk">
+            <image src="{{orderWave_Url}}" mode="scaleToFill" binderror="" bindload="" class="order-wave-img"></image>
+            <view class="order-km-form">根据小刀电动车估算增加里程</view>
+        </view>
+    </view>
+    <view class="order-elec-info">
+        <view class="order-detail-item has-border-bottom">
+            <text class="order-detail-item-name">充电电量</text>
+            <text class="order-detail-item-value">{{detail.electricQuantity}}度</text>
+        </view>
+        <view class="order-detail-item">
+            <text class="order-detail-item-name">充电时长</text>
+            <text class="order-detail-item-value">{{duration}}</text>
+        </view>
+    </view>
+    <view class="order-money-info">
+        <view class="order-detail-item has-border-bottom">
+            <text class="order-detail-item-name">订单信息</text>
+            <text class="order-detail-item-value"></text>
+        </view>
+        <view class="order-detail-item-list">
+            <view class="each-list-item">
+
+                <text class="each-list-item-name">充电桩号</text>
+                <text class="each-list-item-value">{{detail.pileNumber}}</text>
+            </view>
+            <view class="each-list-item">
+                <text class="each-list-item-name">开关号</text>
+                <text class="each-list-item-value">{{detail.switchNo}}号</text>
+            </view>
+            <view class="each-list-item">
+                <text class="each-list-item-name">开始时间</text>
+                <text class="each-list-item-value">{{detail.startTime}}</text>
+            </view>
+            <view class="each-list-item">
+                <text class="each-list-item-name">结束时间</text>
+                <text class="each-list-item-value">{{detail.endTime}}</text>
+            </view>
+        </view>
+        <!-- <view class="order-detail-item">
+            <text class="order-final-pay-num">{{detail.payment/100-detail.exchange_pay/100}} 元</text>
+            <text class="order-final-pay-title">实付</text>
+        </view> -->
+    </view>
+
+    <view class="order-device-info">
+        <view class="order-detail-item  has-border-bottom">
+            <text class="order-detail-item-name">订单号</text>
+            <text class="order-detail-item-value">{{detail.recordId}}</text>
+        </view>
+        <view class="order-detail-item has-border-bottom">
+            <text class="order-detail-item-name">订单状态</text>
+            <text class="order-detail-item-value">{{detail.status}}</text>
+        </view>
+        <view class="order-detail-item">
+            <text class="order-detail-item-name">结束原因</text>
+            <text class="order-detail-item-value">{{detail.completeReason}}</text>
+        </view>
+    </view>
+</view>
+
+<!-- 在页面内添加对应的节点 -->
+<van-notify id="van-notify" />

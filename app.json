@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/user/user",
+    "pages/wallet/wallet",
+    "pages/recharge/recharge",
+    "pages/car/car",
+    "pages/battery/battery",
+    "pages/package/package",
+    "pages/orderList/orderList",
+    "pages/plugCharger/plugCharger",
+    "pages/switchCharging/switchCharging",
+    "pages/switchOrderDetail/switchOrderDetail",
+    "pages/search/search",
+    "pages/chargeCabinet/chargeCabinet"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "96智慧充电",
+    "navigationBarTextStyle": "white"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于定位换电柜"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

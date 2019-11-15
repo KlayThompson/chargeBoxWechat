@@ -1,0 +1,77 @@
+/* pages/recharge/recharge.wxss */
+
+.selfblock-container {
+  height: 100%;
+  width: 100%;
+  background-color: #f6f9f6;
+}
+
+.title {
+  font-size: 50rpx;
+  font-weight: 500;
+  margin-left: 30rpx;
+  padding-top: 25px;
+  padding-bottom: 50rpx;
+  color: #333;
+}
+
+.recharge-select {
+  margin: 0rpx 32rpx 32rpx 32rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.each-recharge-select {
+  width: 326rpx;
+  height: 160rpx;
+  font-size: 32rpx;
+  line-height: 160rpx;
+  text-align: center;
+  border-radius: 6rpx;
+  border: 0.6rpx solid lightgray;
+  color: #333;
+  font-weight: 500;
+}
+
+.choose-money {
+  width: 326rpx;
+  height: 160rpx;
+  font-size: 32rpx;
+  line-height: 160rpx;
+  text-align: center;
+  border-radius: 6rpx;
+  border: 0.6rpx solid #09508e;
+  color: #fff;
+  background-color: #09508e;
+  font-weight: 500;
+}
+
+.recharge-btn-group{
+    width: 618rpx;
+    margin: 0 auto;
+    position: relative;
+    top:200rpx;
+}
+.recharge-text{
+    color:#a6a9b0;
+    font-size: 24rpx;
+    text-align: left;
+    margin-bottom: 24rpx;
+    overflow: hidden;
+}
+.recharge-agreement{
+    color:#48abff;
+    float: left;
+}
+.recharge-btn{
+    width: 100%;
+    height: 96rpx;
+    line-height: 96rpx;
+    background-color: #09508e;
+    font-size:28rpx;
+    color:#fff;
+}
+
+.agree-agreement{
+    float:left;
+}

@@ -1,0 +1,7 @@
+<view class='selfblock-container'>
+  <view class="detail" bindtap="goChargeDetail">明细</view>
+  <view class="title">我的钱包</view>
+  <view class="subTitle"><text>钱包余额</text></view>
+  <view class="money">￥{{totalMoney}}</view>
+  <button bindtap="goRecharge">去充值</button>
+</view>

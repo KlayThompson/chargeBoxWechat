@@ -1,0 +1,7 @@
+<!--pages/battery/battery.wxml-->
+<view class="selfblock-container">
+  <view class="logo">
+    <image src="{{logo_url}}"></image>
+  </view>
+  <view class="tip_text">您还不能租借电池，请联系我们~</view>
+</view>

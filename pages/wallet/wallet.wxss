@@ -1,0 +1,46 @@
+/* pages/wallet/wallet.wxss */
+
+.selfblock-container {
+  height: 100%;
+  width: 100%;
+  background-color: #f6f9f6;
+}
+
+.detail {
+  color: #918d8d;
+  text-align: right;
+  padding-right: 40rpx;
+  padding-top: 30rpx;
+  font-size: 28rpx;
+}
+
+.title {
+  font-size: 50rpx;
+  color: #333;
+  padding-left: 30rpx;
+  padding-top: 20rpx;
+  font-weight: 500;
+}
+
+.subTitle {
+  color: #918d8d;
+  margin-top: 100rpx;
+  text-align: center;
+}
+
+.money {
+  font-size: 100rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  font-weight: 500;
+  color: #333;
+}
+
+button {
+  margin-top: 100px;
+  width: 350rpx;
+  border-radius: 30px;
+  background: #09508e;
+  color: white;
+  padding: 0rpx 100rpx;
+}

@@ -1,0 +1,8 @@
+<!--pages/car/car.wxml-->
+<view class="selfblock-container">
+  <view class="logo">
+    <image src="{{logo_url}}"></image>
+  </view>
+  <view class="tip_text">您暂时没有车辆~</view>
+  <button class="addCar" bindtap="addCar">添加车辆</button>
+</view>

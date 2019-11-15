@@ -1,0 +1,46 @@
+<scroll-view class="full-container" scroll-x="" scroll-y="" upper-threshold="" lower-threshold="" bindscrolltoupper="" bindscrolltolower="" bindscroll="" scroll-into-view="{{}}">
+  <view class="charging-img">
+    <view class="charging-status">
+      <view class="distance-info">
+        <text class="charging-add-distandce" wx:if="{{order.electricQuantity != 0}}">{{order.electricQuantity}}</text>
+        <text class="charging-add-distandce" wx:if="{{order.electricQuantity == 0}}">0</text>
+        <text class="distance-add-title">kWh</text>
+      </view>
+      <image src="{{charging_status_url}}" mode="scaleToFill" binderror="" bindload="" class="charging-status-img"></image>
+    </view>
+    <view class="order-km-form">充电电量</view>
+    <view class="order-wave-bk">
+      <image src="{{orderWave_Url}}" mode="scaleToFill" binderror="" bindload="" class="order-wave-img"></image>
+    </view>
+  </view>
+  <view class="charging-info">
+    <view class="charging-info-item charging-fee {{showdetail ? 'info-has-border' : ''}}" bindtap="showDetail">
+      <view class="each-cahrging-icon">
+        <image src="{{device_url}}"></image>
+      </view>
+      <text class="charging-info-title">充电详情</text>
+      <!-- <text class="charging-info-value">12元</text> -->
+      <image src="{{arrow_right_url}}" wx:if="{{!showdetail}}" class="arrow-img" />
+      <image src="{{arrow_bottom_url}}" wx:if="{{showdetail}}" class="arrow-img" />
+    </view>
+    <view class="charging-info-item-detail" wx:if="{{showdetail}}">
+      <view class="each-charging-fee">
+        <view class="charging-info-detail-title">充电桩号</view>
+        <view class="charging-info-detail-value">{{order.pileNumber}}</view>
+      </view>
+      <view class="each-charging-fee">
+        <view class="charging-info-detail-title">开关号</view>
+        <view class="charging-info-detail-value">{{order.switchNo}}号</view>
+      </view>
+      <view class="each-charging-fee ">
+        <view class="charging-info-detail-title">充电时长</view>
+        <view class="charging-info-detail-value">{{duration}}</view>
+      </view>
+    </view>
+  </view>
+   <image class="adContainer" src="/resources/banner_pic.jpeg" mode="scaleToFill"></image>
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</scroll-view>
+<van-dialog id="van-dialog" />

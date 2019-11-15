@@ -1,0 +1,138 @@
+/* pages/plugCharger/plugCharger.wxss */
+
+page{
+    background-color:#f6f9f6;
+}
+.full-container{
+    background-color:#f6f9f6;
+    padding-top:15rpx;
+}
+.title {
+  font-size: 30rpx;
+  color: #333;
+  padding-left: 30rpx;
+  padding-top: 20rpx;
+  font-weight: 500;
+}
+
+.tip-text {
+  padding: 50rpx 30rpx 30rpx 45rpx;
+  color: #333;
+  font-size: 28rpx;
+}
+
+.VerticalLine {
+  width: 6rpx;
+  background-color: #1296db;
+  height: 45rpx;
+  float: left;
+  margin-left: 20rpx;
+}
+
+.subTitle text {
+  margin-left: 20rpx;
+  color: #333;
+}
+
+.directionView {
+  margin-top: 40rpx;
+}
+
+.empty-line {
+  float: left;
+  width: 40rpx;
+  height: 10rpx;
+  background-color: #3e9e6e;
+  margin-left: 50rpx;
+  margin-top: 16rpx;
+}
+
+.inuse-line {
+  float: left;
+  width: 40rpx;
+  height: 10rpx;
+  background-color: #bfbfbf;
+  margin-left: 50rpx;
+  margin-top: 16rpx;
+}
+
+.error-line {
+  float: left;
+  width: 40rpx;
+  height: 10rpx;
+  background-color: #F56C6C;
+  margin-left: 50rpx;
+  margin-top: 16rpx;
+}
+
+.text {
+  float: left;
+  margin-left: 20rpx;
+  color: #333;
+  font-size: 28rpx;
+}
+
+.text1 {
+  margin-left: 20rpx;
+  color: #333;
+  font-size: 28rpx;
+}
+
+/* .plug-all-bg {
+  background-color: white;
+} */
+
+.plug-bg {
+  width: 25%;
+  text-align: center;
+  margin-top: 20rpx;
+  display: inline-block;
+}
+
+.plug-img {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.plug-text {
+  color: #333;
+}
+
+.money-select-bg {
+  margin-left: 25rpx;
+}
+
+.money-card {
+  width: 160rpx;
+  height: 100rpx;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100rpx;
+  margin: 20rpx;
+  box-shadow: 0rpx 3rpx 4rpx 5rpx rgb(215, 215, 215);
+}.card-select {
+  background-color: #eeac57;
+  color: white;
+}
+
+button {
+  margin: 50rpx 60rpx 0 60rpx;
+  color: #fff;
+  background-color: #09508e;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  margin-bottom: 60rpx;
+}
+
+.price-text {
+  float: left;
+  margin-left: 45rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.subTitle {
+  padding-top: 40rpx;
+  /* background-color: white; */
+}

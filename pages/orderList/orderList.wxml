@@ -1,0 +1,21 @@
+<!--pages/orderList/orderList.wxml-->
+<view class="selfblock-container">
+  <van-tabs active="{{ active }}" bind:change="onChange" color='#455488' swipeable animated>
+    <van-tab title="充电桩">
+      <scroll-view scroll-y='true' class="full-container">
+        <view class="history-item" wx:for="{{order_list}}" wx:key="index" bindtap="showOrderDetail" data-number="{{item.order_number}}" data-order="{{item}}">
+          <view class="history-item-header">
+            <text class="history-date">订单状态：{{item.status}}</text>
+            <text class="history-payment">{{item.endTime ? item.endTime : ''}}</text>
+          </view>
+          <view class="history-item-loaction">
+            订单编号：{{item.recordId}}
+            <image src="{{orderDetail_url}}" mode="scaleToFill" binderror="" bindload="" class="order-detail-btn"></image>
+          </view>
+        </view>
+      </scroll-view>
+    </van-tab>
+    <van-tab title="充电柜">内容 2</van-tab>
+    <van-tab title="换电柜">内容 3</van-tab>
+  </van-tabs>
+</view>

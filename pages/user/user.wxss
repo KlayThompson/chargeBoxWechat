@@ -1,0 +1,77 @@
+.selfblock-container{
+    height:100%;
+    width:100%;
+    background-color:#f6f9f6;
+}
+.usercenter-list-icon{
+    height:46rpx;
+    width:46rpx;
+    margin-top:26rpx;
+    float:left;
+    margin-right:16rpx;
+}
+.user-info{
+    height:200rpx;
+    width:100%;
+    padding-top:50rpx;
+    margin-bottom:1rpx solid #ddd;
+    background-color:#09508e;
+}
+.user-photo{
+    height:100rpx;
+    width:100rpx;
+    margin:0 auto;
+    border-radius:50rpx;
+    margin-bottom:20rpx;
+}
+.user-photo image{
+    width:100%;
+    height:100%;
+    border-radius:50rpx;
+}
+.user-name{
+    width:100%;
+    height:30rpx;
+    line-height:30rpx;
+    text-align:center;
+    margin-top:15rpx;
+    font-size:36rpx;
+    color:#fff;
+}
+.usercenter-list{
+    margin-top:30rpx;
+    background-color:#fff;
+    border-top: 3rpx solid #dcdcdc;
+    border-bottom:3rpx solid #dcdcdc;
+}
+.usercenter-nav{
+    padding:0rpx 30rpx;
+    height:100rpx;
+    line-height:100rpx;
+    font-size:32rpx;
+    border-bottom:1rpx solid #fff;
+}
+.change-user{
+    height:90rpx;
+    font-size:32rpx;
+    text-align:center;
+    line-height:80rpx;
+    width:100%;
+    position:absolute;
+    left:0rpx;
+    right:0rpx;
+    bottom:0rpx;
+    border-top:1rpx solid #ddd;
+}
+.change-user-nav{
+    height:100%;
+}
+.has-border-bottom{
+    border-bottom:2rpx solid #dcdcdc;
+}
+.usercenter-list-arrow-icon{
+    height:46rpx;
+    width:46rpx;
+    margin-top:26rpx;
+    float:right;
+}

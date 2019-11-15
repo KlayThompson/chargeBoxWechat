@@ -1,0 +1,107 @@
+/* pages/switchOrderDetail/switchOrderDetail.wxss */
+.full-container{
+    background-color:#f6f9f6;
+    height:100%;
+}
+.order-main-info{
+    background-color:#3ea874;
+    height:300rpx;
+    width:100%;
+    position:relative;
+    color:#fff;
+    text-align:center;
+    padding-top:40rpx;
+}
+.order-co-info{
+    font-size:32rpx;
+}
+.order-km-info{
+    font-size:48px;
+}
+.order-km-info-unit{
+    font-size:14px;
+    vertical-align:top;
+}
+.order-wave-bk{
+    position:absolute;
+    height:110rpx;
+    left:0rpx;
+    bottom:0rpx;
+    right:0rpx;
+}
+.order-wave-img{
+    width:100%;
+    height:100%;
+    z-index:10;
+}
+.order-km-form{
+    position:absolute;
+    bottom:40rpx;
+    color:#fdfff7;
+    font-size:24rpx;
+    z-index:100;
+    left:0rpx;
+    right:0rpx;
+    text-align:center;
+    opacity:0.69;
+}
+.order-detail-item-name{
+    font-size:30rpx;
+    opacity:0.6;
+}
+.order-detail-item{
+    margin:0rpx 30rpx;
+    height:70rpx;
+    line-height:70rpx;
+}
+.each-list-item{
+    margin:0rpx 30rpx;
+    font-size:24rpx;
+    height:50rpx;
+    line-height:50rpx;
+}
+.each-list-item-name{
+    color:#7c7e82;
+}
+.order-elec-info{
+    color:#262930;
+    background-color:#fefefe;
+    margin-top:20rpx;
+    border-top:1rpx solid #dcdcdc;
+    border-bottom:1rpx solid #dcdcdc;
+}
+.order-money-info{
+    color:#262930;
+    margin-top:20rpx;
+    background-color:#fefefe;
+    border-top:2rpx solid #dcdcdc;
+    border-bottom:2rpx solid #dcdcdc;
+}
+.order-device-info{
+    margin-top:20rpx;
+    background-color:#fefefe;
+    border-top:2rpx solid #dcdcdc;
+    border-bottom:2rpx solid #dcdcdc;
+}
+.has-border-bottom{
+    border-bottom:2rpx solid #dcdcdc
+}
+.order-final-pay-num{
+    float:right;
+    color:#45bb81;
+    font-size:28rpx;
+}
+.order-final-pay-title{
+    float:right;
+    color:#262930;
+    font-size:28rpx;
+    margin-right:19rpx;
+}
+.each-list-item-value{
+    float: right;
+}
+.order-detail-item-value{
+    float: right;
+    font-size:28rpx;
+    color:#262930;
+}

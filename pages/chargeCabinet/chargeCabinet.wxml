@@ -1,0 +1,24 @@
+<!--pages/chargeCabinet/chargeCabinet.wxml-->
+<scroll-view scroll-y='true' class="full-container">
+  <view class="title">充电柜编号：{{cabinetId}}</view>
+  <view class="cabinet-info-bg">
+    <view class="cabinet-info count-right">空电池仓：8个</view>
+    <view class="cabinet-info">总电池仓：10个</view>
+    <view class="cabinet-info">充电桩地址：上海市虹口区花园路171号</view>
+    <view class="cabinet-info">当前套餐：月卡套餐，套餐剩余15天</view>
+  </view>
+  <view class="cabinet-info-bg" hidden="{{hideBatteryDetail}}">
+    <view class="cabinet-info count-right">电池剩余容量：80%</view>
+    <view class="cabinet-info">SOC：100</view>
+    <view class="cabinet-info">电池编号：C09189020391231</view>
+    <view class="cabinet-info">所属电柜编号：CP4810ANYO191010001</view>
+  </view>
+  <view class="wallet" bindtap="goRecharge">钱包余额：200元 ></view>
+  <view class="cabinet-info-bg gray-bg" hidden="{{!hideBatteryDetail}}"></view>
+  <!-- <view class="mainButton" bindtap="mainButtonTap" disabled='true'>{{btnTitle}}</view> -->
+    <button class="mainButton" bindtap="mainButtonTap" disabled="{{disableBtn}}">{{btnTitle}}</button>
+
+</scroll-view>
+<van-dialog id="van-dialog" />
+<van-notify id="van-notify" />
+

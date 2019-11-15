@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-tab": "/utils/dist/tab/index",
+    "van-tabs": "/utils/dist/tabs/index"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

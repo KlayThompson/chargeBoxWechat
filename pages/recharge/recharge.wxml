@@ -1,0 +1,24 @@
+<!--pages/recharge/recharge.wxml-->
+<view class="selfblock-container">
+  <view class="title">钱包充值</view>
+  <view class="recharge-select">
+    <view class="{{one_choose?'choose-money':'each-recharge-select'}}" bindtap="chooseRechargeMoney" data-money="99">充99元</view>
+    <view class="{{two_choose? 'choose-money':'each-recharge-select'}}" bindtap="chooseRechargeMoney" data-money="199">充199元</view>
+  </view>
+  <view class="recharge-select">
+    <view class="{{three_choose? 'choose-money' :'each-recharge-select'}}" bindtap="chooseRechargeMoney" data-money="299">充299元</view>
+    <view class="{{four_choose? 'choose-money':'each-recharge-select'}}" bindtap="chooseRechargeMoney" data-money="599">充599元</view>
+
+  </view>
+  <view class="recharge-select">
+    <view class="{{five_choose? 'choose-money':'each-recharge-select'}}" bindtap="chooseRechargeMoney" data-money="350">充350元</view>
+  </view>
+
+<view class="recharge-btn-group">
+    <view class="recharge-text">
+      <text class="agree-agreement">点击立即充值, 即表示已阅读并同意</text>
+      <navigator url="{{recharge_client}}" hover-class="navigator-hover" class="recharge-agreement">《充值协议》</navigator>
+    </view>
+    <button class="recharge-btn" bindtap="goRecharge">立即充值</button>
+  </view>
+</view>

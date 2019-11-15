@@ -1,0 +1,8 @@
+<!--地图容器-->
+<map id="myMap" style="width: 100%; height: {{mapHeight}}px;" longitude="{{longitude}}" latitude="{{latitude}}" scale='{{scale}}' markers="{{markers}}" covers="{{covers}}" controls="{{controls}}" bindcontroltap='controltap' show-location></map>
+
+<cover-view class="noLogin" hidden="{{isLogin}}">
+  您尚未登录，暂时不能使用换电服务 
+  <button class="loginButton" size="mini" bindtap="goLogin">登录</button>
+</cover-view>
+<van-notify id="van-notify" />

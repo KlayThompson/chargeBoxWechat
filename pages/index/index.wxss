@@ -1,0 +1,21 @@
+/**index.wxss**/
+.noLogin {
+  width: 100%;
+  height: 100rpx;
+  position: absolute;
+  background: #eeac57;
+  color: white;
+  top: -1rpx;
+  vertical-align: middle;
+  font-size: 27rpx;
+  line-height: 100rpx;
+  padding-left: 35rpx;
+}
+.loginButton {
+  width: 120rpx;
+  float: right;
+  color: #eeac57;
+  background-color: white;
+  margin-top: 25rpx;
+  margin-right: 90rpx;
+}

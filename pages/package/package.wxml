@@ -1,0 +1,6 @@
+<view class="selfblock-container">
+  <view class="logo">
+    <image src="{{logo_url}}"></image>
+  </view>
+  <view class="tip_text">您还没有购买套餐</view>
+</view>

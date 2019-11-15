@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-dialog": "/utils/dist/dialog/index"
+  },
+  "navigationBarTitleText": "个人中心",
+  "navigationBarBackgroundColor": "#09508e",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": false
+}

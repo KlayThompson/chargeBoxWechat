@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-dialog": "/utils/dist/dialog/index",
+    "van-notify": "/utils/dist/notify/index"
+  }
+}

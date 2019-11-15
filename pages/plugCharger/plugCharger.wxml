@@ -1,0 +1,37 @@
+<scroll-view scroll-y='true' class="full-container" >
+  <view class="title">充电柜编号：{{pileNum}}</view>
+  <view class="subTitle">
+    <view class="VerticalLine"></view>
+    <text>选择插座</text>
+  </view>
+
+  <view class="directionView">
+    <view class="empty-line"></view>
+    <text class="text">可使用</text>
+    <view class="inuse-line"></view>
+    <text class="text">占用中</text>
+    <view class="error-line"></view>
+    <text class="text1">故障</text>
+  </view>
+  <!-- 选择插座 -->
+  <view class="plug-all-bg">
+    <view class="plug-bg {{item.select ? 'know' : ''}}" wx:for="{{plugList}}" wx:for-index="index" wx:for-item="item" wx:key="index" bindtap="selectSwitch" data-num="{{item.title}}">
+      <image class="plug-img" wx:if="{{!item.select}}" src="{{item.src}}"></image>       <image class="plug-img" wx:else src='/resources/plug_select.png'></image>
+      <view class="plug-text">{{item.title}}</view>
+    </view>
+  </view>
+
+  <view class="subTitle">
+    <view class="VerticalLine"></view>
+    <text>充电金额</text>
+  </view>
+  <view class="money-select-bg">
+    <view class="money-card {{select1 ? 'card-select' : ''}}" bindtap="selectMoney" data-money="1">1元</view>
+    <view class="money-card {{select2 ? 'card-select' : ''}}" bindtap="selectMoney" data-money="2">2元</view>
+  </view>
+  <view class="price-text">1元3小时，2元6小时</view>
+  <view class="tip-text"><text class="title">温馨提示：</text>开启充电前请务必先确保已连接插头，充电金额自动从钱包扣除，如余额不足可在线充值</view>
+  <button disabled="{{submitDisable}}" bindtap="startCharge">开启充电</button>
+</scroll-view>
+<!-- 在页面内添加对应的节点 -->
+<van-notify id="van-notify" />

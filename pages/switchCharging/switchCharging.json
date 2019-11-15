@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-dialog": "/utils/dist/dialog/index"
+  },
+  "navigationBarTitleText": "充电中",
+  "navigationBarBackgroundColor": "#3ea874",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": false
+}

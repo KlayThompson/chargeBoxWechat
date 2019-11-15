@@ -1,0 +1,104 @@
+/* pages/search/search.wxss */
+.searchbar{
+  background: #374054;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search-input{
+  color: white;
+  margin-left: 20rpx;
+  background: #374054;
+  font-size: 25rpx;
+  width: 600rpx;
+  height: 60rpx;
+  border-color: #878E9A;
+  border-width: 2rpx;
+  border-style: solid;
+  border-radius: 10rpx;
+  /* text-indent: 20rpx; */
+  padding-left: 15rpx;
+}
+
+.search-cancel{
+  color: #FFFFFF;
+  height: 60rpx;
+  font-size: 26rpx;
+  line-height: 60rpx;
+  margin-left: 20rpx;
+}
+
+.cell-bgView{
+   background: white;
+   display: flex;
+   height: 140rpx;
+   align-items: center;
+}
+
+.cell-stationImg{
+   width: 80rpx;
+   height: 80rpx;
+}
+
+.cell-content{
+   margin-left: 20rpx;
+}
+
+.cell-Separate{
+  display: flex;
+  position: absolute;
+  background: #D8D8D8;
+  width: 730rpx;
+  height: 2rpx;
+  /* margin-top: 70rpx; */
+  margin-left: 20rpx;
+}
+
+.content-title{
+  color: #374054;
+  opacity: 0.8;
+  font-size: 32rpx;
+}
+
+.content-address{
+  margin-top: 10rpx;
+  color: #374054;
+  opacity: 0.4;
+  font-size: 28rpx;
+}
+
+.loadMore{
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.4;
+  font-size: 28rpx;
+  color: #374054;
+}
+
+/*  背景框 */
+.emptBackView{
+  display: flex; 
+  flex-flow: column;
+  position: fixed;
+  width: 750rpx;
+  height: 700rpx;
+  /* background: yellow; */
+  align-items: center;
+  justify-content: center;
+}
+
+.empt-img{
+  width: 260rpx;
+  height: 260rpx;
+}
+
+.empt-title
+{
+  color: #374054;
+  opacity: 0.4;
+  font-size:28rpx;
+}

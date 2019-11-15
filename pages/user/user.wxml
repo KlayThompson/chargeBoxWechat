@@ -1,0 +1,51 @@
+<view class="selfblock-container">
+  <view class="user-info">
+    <view class="user-photo">
+      <image src="{{userPhoto}}" mode="scaleToFill" binderror="" bindload=""></image>
+    </view>
+    <view class="user-name">
+      <text>{{userName}}</text>
+    </view>
+  </view>
+  <view class="usercenter-list">
+    <navigator url="{{wallet_url}}" hover-class="navigator-hover" class="usercenter-nav">
+      <view class="has-border-bottom">
+        <image src="{{walletIcon_url}}" mode="scaleToFill" binderror="" bindload="" class="usercenter-list-icon"></image>
+        我的钱包
+        <image src="{{arrow_icon_url}}" mode="scaleToFill" binderror="" bindload="" class="usercenter-list-arrow-icon"></image>
+      </view>
+    </navigator>
+     <navigator url="{{package_url}}" hover-class="navigator-hover" class="usercenter-nav">
+      <view class="has-border-bottom">
+        <image src="{{discountIcon_url}}" mode="scaleToFill" binderror="" bindload="" class="usercenter-list-icon"></image>
+        我的套餐
+        <image src="{{arrow_icon_url}}" mode="scaleToFill" binderror="" bindload="" class="usercenter-list-arrow-icon"></image>
+      </view>
+    </navigator>
+     <navigator url="{{battery_url}}" hover-class="navigator-hover" class="usercenter-nav">
+      <view class="has-border-bottom">
+        <image src="{{batteryIcon_url}}" mode="scaleToFill" binderror="" bindload="" class="usercenter-list-icon"></image>
+        我的电池
+        <image src="{{arrow_icon_url}}" mode="scaleToFill" binderror="" bindload="" class="usercenter-list-arrow-icon"></image>
+      </view>
+    </navigator>
+    <navigator url="{{orderList_url}}" hover-class="navigator-hover" class="usercenter-nav">
+      <view class="has-border-bottom">
+        <image src="{{orderListIcon_url}}" mode="scaleToFill" binderror="" bindload="" class="usercenter-list-icon"></image>
+        我的订单
+        <image src="{{arrow_icon_url}}" mode="scaleToFill" binderror="" bindload="" class="usercenter-list-arrow-icon"></image>
+      </view>
+    </navigator>
+    <navigator url="{{car_url}}" hover-class="navigator-hover" class="usercenter-nav">
+      <view>
+        <image src="{{carIcon_url}}" mode="scaleToFill" binderror="" bindload="" class="usercenter-list-icon"></image>
+        我的车辆
+        <image src="{{arrow_icon_url}}" mode="scaleToFill" binderror="" bindload="" class="usercenter-list-arrow-icon"></image>
+      </view>
+    </navigator>
+  </view>
+  <view class="change-user">
+    <button class="change-user-nav" bindtap="changeUser">切换账号</button>
+  </view>
+</view>
+<van-dialog id="van-dialog" />

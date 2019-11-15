@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-notify": "/utils/dist/notify/index"
+  },
+  "navigationBarTitleText": "订单详情",
+  "navigationBarBackgroundColor": "#3ea874",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": false
+}
