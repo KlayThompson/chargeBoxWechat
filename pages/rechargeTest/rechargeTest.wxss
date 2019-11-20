@@ -1,0 +1,114 @@
+/* pages/rechargeTest/rechargeTest.wxss */
+
+.selfblock-container {
+  height: 100%;
+  width: 100%;
+  background-color: #f6f9f6;
+}
+
+.detail {
+  color: #918d8d;
+  text-align: right;
+  padding-right: 40rpx;
+  padding-top: 30rpx;
+  font-size: 28rpx;
+}
+
+.title {
+  font-size: 50rpx;
+  color: #333;
+  padding-left: 30rpx;
+  padding-top: 20rpx;
+  font-weight: 500;
+}
+
+.subTitle {
+  color: #918d8d;
+  margin-top: 100rpx;
+  text-align: center;
+}
+
+.money {
+  font-size: 100rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  font-weight: 500;
+  color: #333;
+}
+
+.recharge-type-container {
+  margin-top: 20rpx;
+  border-top: 3rpx solid #dcdcdc;
+  /* border-bottom: 3rpx solid #dcdcdc; */
+  background-color: #fff;
+}
+
+.recharge-type-title {
+  height: 96rpx;
+  line-height: 96rpx;
+  font-size: 32rpx;
+  padding-left: 32rpx;
+  color: #262930;
+  border-bottom: 3rpx solid #dcdcdc;
+  text-align: left;
+  font-family: PingFangSC-Regular;
+}
+
+.recharge-type-select {
+  font-size: 32rpx;
+  font-family: PingFangSC-Regular;
+  height: 96rpx;
+  line-height: 96rpx;
+  border-bottom: 2rpx solid #ddd;
+  margin-left: 32rpx;
+  padding-right: 32rpx;
+}
+
+.wx-icon-img {
+  width: 52rpx;
+  height: 52rpx;
+  margin-right: 10rpx;
+  float: left;
+  margin-top: 24rpx;
+}
+
+.checked-icon-img {
+  width: 52rpx;
+  height: 52rpx;
+  margin-right: 10rpx;
+  margin-top: 24rpx;
+  float: right;
+}
+
+.uncheck-icon-img {
+  width: 45rpx;
+  height: 45rpx;
+  margin-right: 14rpx;
+}
+
+.tip-text {
+  font-size: 26rpx;
+  color: #888;
+}
+
+.btn-view {
+  margin-top: 100px;
+}
+
+button {
+  width: 250rpx;
+  border-radius: 30px;
+  background: #09508e;
+  color: white;
+  font-size: 32rpx;
+}
+
+.btn-charging {
+  float: right;
+  margin-right: 60rpx;
+}
+
+.btn-recharge {
+  float: left;
+  margin-left: 60rpx;
+}

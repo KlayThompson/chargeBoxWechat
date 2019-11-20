@@ -64,9 +64,10 @@ Page({
       success: function(res) {
         if (res.statusCode == 200) {
           //判断是否有电池，
-          if (common.isEmpty(res.data.bindingBatteryNumber)) {
+          if (res.data.bindingBatteryNumber == null) {
             that.setData({
-              notBind: true
+              notBind: true,
+              btnTitle: '取电池'
             })
           } else {
             that.setData({
@@ -152,6 +153,12 @@ Page({
               }
               recordId = res.data.records[0].id
             }
+          } else {
+            Notify({
+              type: 'warning',
+              message: res.data,
+              duration: 10000
+            })
           }
         },
         fail: function (err) {
@@ -193,7 +200,8 @@ Page({
           } else {
             Notify({
               type: 'warning',
-              message: '获取电池失败，请重新尝试'
+              message: res.data.msg,
+              duration: 10000
             })
           }
         },
@@ -231,7 +239,8 @@ Page({
             } else {
               Notify({
                 type: 'warning',
-                message: '开门失败，请重新尝试'
+                message: res.data.msg,
+                duration: 10000
               })
             }
           },
@@ -265,6 +274,12 @@ Page({
                 // wx.navigateBack({})
                 console.log(res.data)
               });
+            } else {
+              Notify({
+                type: 'warning',
+                message: res.data.msg,
+                duration: 10000
+              })
             }
           },
           fail: function() {

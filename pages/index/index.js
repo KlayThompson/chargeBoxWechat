@@ -131,9 +131,12 @@ Page({
     var that = this;
     if (evevt.controlId == 1) { // 定位
       that.moveToLocation();
-      wx.navigateTo({
-        url: '../chargeCabinet/chargeCabinet?cabinetNo=AY01A00YX18110009',
-      })
+      // wx.navigateTo({
+      //   url: '../chargeCabinet/chargeCabinet?cabinetNo=AY01A00YX18110009',
+      // })
+      // wx.navigateTo({
+      //   url: '../rechargeTest/rechargeTest',
+      // })
     } else if (evevt.controlId == 2) { // 个人中心
       //是否登录
       var url = '../user/user';

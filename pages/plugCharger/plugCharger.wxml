@@ -31,7 +31,7 @@
   </view>
   <view class="price-text">1元3小时，2元6小时</view>
   <view class="tip-text"><text class="title">温馨提示：</text>开启充电前请务必先确保已连接插头，充电金额自动从钱包扣除，如余额不足可在线充值</view>
-  <button disabled="{{submitDisable}}" bindtap="startCharge">开启充电</button>
+  <button disabled="{{submitDisable}}" bindtap="startCharge">选择支付方式</button>
 </scroll-view>
 <!-- 在页面内添加对应的节点 -->
 <van-notify id="van-notify" />

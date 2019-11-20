@@ -149,37 +149,51 @@ Page({
     } else {
       time = 3600 * 6;
     }
-    wx.request({
-      url: API + '/v1/chargingapi/pile/record',
-      method: 'POST',
-      header: header,
-      data: {
-        pileId: pileId,
-        switchNo: switchId,
-        duration: time
-      },
-      success: function(res) {
-        if (res.statusCode == 200) {
-          Notify({
-            type: 'success',
-            message: '开启充电成功',
-            onClose: function () {
-              wx.redirectTo({
-                url: '../switchCharging/switchCharging?recordId=' + res.data.recordId,
-              })
-            }
-          })
-        } else if (res.statusCode == 403) {
-          Notify({ type: 'warning', message: '抱歉，无法启动此设备' });
-        } else if (res.statusCode == 404) {
-          Notify({ type: 'warning', message: '开启失败，无此设备' })
-        } else {
-          Notify({ type: 'warning', message: '开启失败'+res.statusCode })
-        }
-      },
-      fail: function(err) {
-        Notify({type: 'warning', message: '开启充电失败，请检查网络'})
-      }
+
+
+    var money = '';
+    if (this.data.select1) {
+      money = '1';
+    } else {
+      money = '2';
+    }
+    wx.redirectTo({
+      url: '../rechargeTest/rechargeTest?rechargeMoney=' + money + '&time=' + time + '&pileId=' + pileId + '&switchId=' + switchId,
     })
+
+
+
+    // wx.request({
+    //   url: API + '/v1/chargingapi/pile/record',
+    //   method: 'POST',
+    //   header: header,
+    //   data: {
+    //     pileId: pileId,
+    //     switchNo: switchId,
+    //     duration: time
+    //   },
+    //   success: function(res) {
+    //     if (res.statusCode == 200) {
+    //       Notify({
+    //         type: 'success',
+    //         message: '开启充电成功',
+    //         onClose: function () {
+    //           wx.redirectTo({
+    //             url: '../switchCharging/switchCharging?recordId=' + res.data.recordId,
+    //           })
+    //         }
+    //       })
+    //     } else if (res.statusCode == 403) {
+    //       Notify({ type: 'warning', message: '抱歉，无法启动此设备' });
+    //     } else if (res.statusCode == 404) {
+    //       Notify({ type: 'warning', message: '开启失败，无此设备' })
+    //     } else {
+    //       Notify({ type: 'warning', message: '开启失败'+res.statusCode })
+    //     }
+    //   },
+    //   fail: function(err) {
+    //     Notify({type: 'warning', message: '开启充电失败，请检查网络'})
+    //   }
+    // })
   }
 })

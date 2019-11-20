@@ -13,7 +13,9 @@
     "pages/switchCharging/switchCharging",
     "pages/switchOrderDetail/switchOrderDetail",
     "pages/search/search",
-    "pages/chargeCabinet/chargeCabinet"
+    "pages/chargeCabinet/chargeCabinet",
+    "pages/rechargeTest/rechargeTest",
+    "pages/web/web"
   ],
   "window": {
     "backgroundTextStyle": "light",
