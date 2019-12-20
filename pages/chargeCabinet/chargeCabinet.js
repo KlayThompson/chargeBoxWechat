@@ -74,7 +74,13 @@ Page({
               notBind: false
             })
           }
-        } else {}
+        } else {
+          Notify({
+            type: 'warning',
+            message: res.data.msg + res.statusCode,
+            duration: 4000
+          })
+        }
       },
       fail: function(error) {
 
@@ -111,6 +117,12 @@ Page({
             }
             recordId = res.data.records[0].id
           }
+        } else {
+          Notify({
+            type: 'warning',
+            message: res.data.msg + res.statusCode,
+            duration: 4000
+          })
         }
       },
       fail: function (err) {
@@ -156,8 +168,8 @@ Page({
           } else {
             Notify({
               type: 'warning',
-              message: res.data,
-              duration: 10000
+              message: res.data.msg + res.statusCode,
+              duration: 4000
             })
           }
         },
@@ -201,7 +213,7 @@ Page({
             Notify({
               type: 'warning',
               message: res.data.msg,
-              duration: 10000
+              duration: 4000
             })
           }
         },
@@ -240,7 +252,7 @@ Page({
               Notify({
                 type: 'warning',
                 message: res.data.msg,
-                duration: 10000
+                duration: 4000
               })
             }
           },
@@ -278,7 +290,7 @@ Page({
               Notify({
                 type: 'warning',
                 message: res.data.msg,
-                duration: 10000
+                duration: 4000
               })
             }
           },

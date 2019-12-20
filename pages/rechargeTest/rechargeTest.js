@@ -98,12 +98,14 @@ Page({
               })
             }
           })
-        } else if (res.statusCode == 403) {
-          Notify({ type: 'warning', message: '抱歉，无法启动此设备' });
-        } else if (res.statusCode == 404) {
-          Notify({ type: 'warning', message: '开启失败，无此设备' })
-        } else {
-          Notify({ type: 'warning', message: '开启失败'+res.statusCode })
+        }
+        //  else if (res.statusCode == 403) {
+        //   Notify({ type: 'warning', message: '抱歉，无法启动此设备' });
+        // } else if (res.statusCode == 404) {
+        //   Notify({ type: 'warning', message: '开启失败，无此设备' })
+        // }
+         else {
+          Notify({ type: 'warning', message: res.data.msg+res.statusCode })
         }
       },
       fail: function(err) {

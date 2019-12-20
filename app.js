@@ -35,7 +35,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    API: 'https://tapp.anyocharging.com:12333',
+    API: 'http://139.198.176.116:12333/',
     // API: 'http://172.16.1.2:9932',
   }
 })
